@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link  rel="stylesheet" href="styles.css">
+    
+</head>
+<body onload="DrawCaptcha();">
+   
+       
+        
+        <h1>Loan Application</h1>
+        <form  name="loanapp" id="loanapp" onsubmit="return(validate());">
+        <div class="container">
+          
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Full Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="fname" placeholder=" Enter Your name..">
+               
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-25">
+                <label for="email">Email</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="email" name="email" placeholder="Enter Email Id..">
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                  <label for="pan">PAN</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="pan" name="pan" placeholder="Enter PAN number.." >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="loan">Loan Amount</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="loan" name="loan" placeholder="Enter Loan amount.." onkeyup="convertnum()">
+                   <p id="words"></p>
+                </div>
+              </div>
+              <br><br>
+              <div class="row">
+                <div class="col-25">
+                 Captcha
+                </div>
+              <div class="col-25">
+              
+                
+                        <input type="text" id="txtCaptcha" 
+                            style=" text-align:center; 
+                            font-weight:bold; font-family:Modern" />
+                        <input type="button" id="btnrefresh" value="Refresh" onclick="DrawCaptcha();" />
+                   
+                    
+                        <input type="text" id="txtInput"/>    
+                    
+                        <input id="Button1" class="button-submit1"  type="button" value="Check" onclick="ValidCaptcha();"/>
+                        
+                
+            </div>
+            </div>
+                
+            
+            <div class="row">
+              <input type="submit" id="btnsubmit"  value="Submit" class="button-submit">
+            </div>
+            
+          
+        </div>
+      </form>
+
+        
+      
+        
+        
+
+        
+        
+        
+
+    
+</body>
+<script src="main.js"></script>
+
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link  rel="stylesheet" href="styles.css">
+
+</head>
+<body class="container">
+<form role="form" >
+    <div class="mainBox">
+    <div class="cust-name">Dear <span id="fullname"></span>
+     Thank you for your inquiry. </div><br>
+    
+     
+    <div class="row">
+        <div class="col-25-thankyou">
+          <label for="otp">A 4 digit verification number has been sent to your email:</label>
+        </div>
+        <div class="col-25-thankyou">
+          <br>
+          <span  id="emailID"></span>
+        
+        </div>
+      </div> 
+        
+
+    <div class="row">
+        <div class="col-25-thankyou">
+          <label for="otp">    Please enter OTP & Submit:</label>
+        </div>
+        <div class="col-25-thankyou">
+          <input type="text" id="otp" name="otp" placeholder="Enter OTP..">
+          
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25-thankyou">
+            
+        </div>
+        <div class="col-25-thankyou">
+            <input type="button" value =Validate id="btnsubmit" class="button-validate" onclick="compareOTP()"> 
+        </div>
+      </div>
+      
+        
+    </div>
+   
+  </form> 
+ 
+</body>
+<script src="main.js"></script>
+    <script src="thankyou.js"></script>
+</html>
